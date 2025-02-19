@@ -1,0 +1,70 @@
+body {
+    font-family: 'Assistant', sans-serif; /* Utiliser la police Assistant */
+    background-color: #1E90FF;
+    color: white;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    background-color: #00BFFF;
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 400px;
+    margin: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+header {
+    text-align: center; /* Centrer le titre */
+    font-family: 'Assistant', sans-serif; /* Utiliser la police Assistant */
+}
+
+.logo {
+    display: flex;
+    justify-content: center; /* Centrer le logo */
+    margin: 20px 0;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+h2 {
+    text-align: center;
+    margin: 10px 0;
+    font-family: 'Assistant', sans-serif; /* Utiliser la police Assistant */
+}
+
+.question {
+    margin: 20px 0;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    background-color: white;
+    color: #1E90FF;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    flex: 1;
+    margin: 0 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #f0f0f0;
+}
