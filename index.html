@@ -17,25 +17,43 @@
         <div class="logo">
             <img src="logo_groupe_2.png" alt="Logo OpasSusi">
         </div>
-        <h2>Some questions to know you better !</h2>
+        <h2>Some questions to know you better!</h2>
         <div class="question">
-            <p>For how long are you staying in Finland ?</p>
+            <p>For how long are you staying in Finland?</p>
             <div class="options">
-                <button>For a semester</button>
-                <button>For one year</button>
-                <button>For a couple of years</button>
+                <button onclick="saveData('duration', 'For a semester')">For a semester</button>
+                <button onclick="saveData('duration', 'For one year')">For one year</button>
+                <button onclick="saveData('duration', 'For a couple of years')">For a couple of years</button>
             </div>
         </div>
         <div class="question">
             <p>What is your nationality?</p>
-            <input type="text" placeholder="...type in here">
+            <input type="text" id="nationality" placeholder="...type in here">
         </div>
         <div class="question">
             <p>What course are you joining?</p>
-            <button>International Business</button>
-            <button>Industrial Management</button>
-            <button>Information and Communication Technology</button>
+            <div class="options">
+                <button onclick="saveData('course', 'International Business')">International Business</button>
+                <button onclick="saveData('course', 'Industrial Management')">Industrial Management</button>
+                <button onclick="saveData('course', 'Information and Communication Technology')">Information and Communication Technology</button>
+            </div>
         </div>
+        <button class="continue-button" onclick="saveAndContinue()">continue...</button>
     </div>
+
+    <script>
+        function saveData(key, value) {
+            localStorage.setItem(key, value);
+            alert(`${key} saved: ${value}`);
+        }
+
+        function saveAndContinue() {
+            const nationality = document.getElementById('nationality').value;
+            if (nationality) {
+                localStorage.setItem('nationality', nationality);
+            }
+            window.location.href = 'page2.html'; // Rediriger vers la page 2
+        }
+    </script>
 </body>
 </html>

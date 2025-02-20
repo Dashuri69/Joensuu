@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box; /* Assurer un bon comportement des marges et des paddings */
+}
+
+html, body {
+    height: 102%; /* Prendre toute la hauteur de l'écran */
+    margin: 0; /* Enlever les marges par défaut */
+    padding: 0; /* Enlever les paddings par défaut */
+    font-family: 'Assistant', sans-serif; /* Police de caractère */
+    background-color: #1E90FF; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+}
+
+.container {
+    background-color: #00BFFF; /* Couleur de fond du conteneur */
+    border-radius: 20px; /* Coins arrondis */
+    padding: 20px; /* Espacement interne */
+    max-width: 30%; /* Largeur maximale pour s'adapter aux téléphones */
+    margin: auto; /* Centrer le conteneur */
+    height: calc(100% - 40px); /* Ajuster pour le padding */
+    display: flex;
+    flex-direction: column; /* Disposition en colonne */
+    align-items: center; /* Centrer le contenu horizontalement */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Ombre pour le conteneur */
+    text-align: center; /* Centrer tout le texte */
+}
+
+header {
+    width: 100%; /* Prendre toute la largeur */
+    display: flex;
+    justify-content: space-between; /* Espacement entre les éléments */
+    align-items: center; /* Centrer verticalement */
+}
+
+.back-button {
+    color: white; /* Couleur du texte */
+    text-decoration: none; /* Pas de soulignement */
+    font-size: 16px; /* Taille de police */
+}
+
+.logo {
+    margin: 10px; /* Espacement autour du logo */
+    display: flex; /* Utiliser flex pour centrer le logo */
+    justify-content: center; /* Centrer horizontalement */
+    width: 100%; /* Prendre toute la largeur pour centrer correctement */
+}
+
+.logo img {
+    width: 80px; /* Largeur du logo */
+    height: auto; /* Hauteur automatique pour garder les proportions */
+}
+
+h2 {
+    margin: 20px 0; /* Espacement autour du titre */
+}
+
+.chapter-list {
+    width: 100%; /* Prendre toute la largeur */
+}
+
+.chapter-button {
+    background-color: #1E90FF; /* Couleur du bouton */
+    color: white; /* Couleur du texte du bouton */
+    border: none; /* Pas de bordure */
+    border-radius: 25px; /* Coins arrondis */
+    padding: 12px; /* Espacement interne */
+    cursor: pointer; /* Curseur en main au survol */
+    margin: 10px 0; /* Espacement vertical entre les boutons */
+    font-size: 16px; /* Taille de police du bouton */
+    width: 100%; /* Rendre les boutons de largeur complète */
+    transition: background-color 0.3s ease; /* Animation de transition */
+}
+
+.chapter-button:hover {
+    background-color: #00BFFF; /* Couleur au survol */
+}
+
+footer {
+    margin-top: auto; /* Pousser le footer en bas */
+    display: flex;
+    justify-content: space-around; /* Espacement entre les icônes */
+    width: 100%; /* Prendre toute la largeur */
+}
+
+.footer-icons a img {
+    width: 30px; /* Largeur des icônes */
+    height: auto; /* Hauteur automatique pour garder les proportions */
+}
