@@ -45,7 +45,7 @@ const levels = [
     info: "Your student housing or rental apartment might not provide bed linens, towels, or kitchen essentials—visit IKEA or Tokmanni to buy them.",
     mazeData: [
       [1,1,1,1,1,1,1,1,1,1,1,1],
-      [1,0,0,0,0,0,0,0,1,0,0,1],
+      [1,0,0,0,0,0,0,0,0,0,0,1],
       [1,0,1,1,1,0,1,0,1,0,0,1],
       [1,0,0,0,1,0,1,0,1,0,1,1],
       [1,1,1,0,1,1,1,0,1,0,0,1],
