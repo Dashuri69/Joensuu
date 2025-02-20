@@ -3,7 +3,7 @@
 }
 
 html, body {
-    height: 102%; /* Prendre toute la hauteur de l'écran */
+    height: 100%; /* Prendre toute la hauteur de l'écran */
     margin: 0; /* Enlever les marges par défaut */
     padding: 0; /* Enlever les paddings par défaut */
     font-family: 'Assistant', sans-serif; /* Police de caractère */
@@ -15,7 +15,7 @@ html, body {
     background-color: #00BFFF; /* Couleur de fond du conteneur */
     border-radius: 20px; /* Coins arrondis */
     padding: 20px; /* Espacement interne */
-    max-width: 90%; /* Largeur maximale pour s'adapter aux téléphones */
+    max-width: 30%; /* Largeur maximale pour s'adapter aux téléphones */
     margin: auto; /* Centrer le conteneur */
     height: calc(100% - 40px); /* Ajuster pour le padding */
     display: flex;
@@ -56,6 +56,9 @@ h2 {
 
 .chapter-list {
     width: 100%; /* Prendre toute la largeur */
+    display: flex; /* Utiliser flex pour la disposition */
+    flex-direction: column; /* Disposition en colonne */
+    align-items: center; /* Centrer les éléments horizontalement */
 }
 
 .chapter-button {
