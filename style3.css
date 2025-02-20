@@ -15,7 +15,7 @@ html, body {
     background-color: #00BFFF; /* Couleur de fond du conteneur */
     border-radius: 20px; /* Coins arrondis */
     padding: 20px; /* Espacement interne */
-    max-width: 30%; /* Largeur maximale pour s'adapter aux téléphones */
+    max-width: 90%; /* Largeur maximale pour s'adapter aux téléphones */
     margin: auto; /* Centrer le conteneur */
     height: calc(100% - 40px); /* Ajuster pour le padding */
     display: flex;
